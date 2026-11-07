@@ -1,7 +1,16 @@
 
 const myList = document.getElementById("myList");
+const firstItem = myList.querySelector("li");
 
-console.log(myList.id);              // Shows "myList"
-console.log(myList.children.length); // Shows how many list items it has
+console.log(myList.id);              // "myList"
+console.log(myList.children.length); // Number of list items
+console.log(myList.textContent);     // Text inside the list
 
-myList.querySelector("li").textContent = "Updated item";
+firstItem.textContent = "Updated item";
+
+
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.addEventListener("click", () => {
+  alert("Button clicked!");
+});

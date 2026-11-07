@@ -21,18 +21,32 @@ In script.js, first select the list, then change it. For example, to change the 
 const myList = document.getElementById("myList");
 myList.querySelector("li").textContent = "New item";
 
-Task 3:
+## Task 3: Exploring the `<ul id="myList">` element
 
+The assignment says “parameters,” but for things that can be read from a DOM element, the more accurate word is **properties**. A property is information or a value belonging to an object. A method is an action you call. A method's parameter is a named input; the value supplied when calling it is an argument. For example, `"myList"` is the argument passed to `getElementById()`.
 
-For the <ul id="myList"> element, JavaScript can access properties such as:
+Useful properties of this list include:
 
-myList.id - tells you its ID, such as "myList".
-myList.children - gives you the list’s child elements—the <li> items.
-myList.textContent  - reads or changes all the text inside the list.
-myList.classList  - lets you check, add, or remove CSS classes.
+- `myList.id` - reads the list's ID, `"myList"`.
+- `myList.children` - gives the list's child elements, the `<li>` items.
+- `myList.children.length` - counts the child elements.
+- `myList.textContent` - reads all text in the list. Setting it replaces the list's contents, including its `<li>` elements.
+- `myList.classList` - lets you inspect, add, or remove CSS classes.
 
+I tried these properties and changed the first list item's text in `script.js`:
 
-'These are called properties, not parameters. Parameters are values passed into a method, like "myList" in document.getElementById("myList").'
+```js
+const myList = document.getElementById("myList");
+const firstItem = myList.querySelector("li");
+
+console.log(myList.id);                 // "myList"
+console.log(myList.children.length);    // Number of list items
+console.log(myList.textContent);        // Text inside the list
+
+firstItem.textContent = "Updated item"; // Changes the first <li>
+```
+
+`querySelector("li")` is a method that finds the first matching `<li>` inside the list. `"li"` is the argument telling it what to find. The change to `textContent` updates the page displayed in the browser; it does not edit the original HTML file.
 
 
 ## Task 4: DOM elements in this HTML page
