@@ -1,40 +1,22 @@
-# Learning Diary: JavaScript and the DOM
 
-## Summary
-
-In a browser, `document` is the JavaScript object representing the current HTML page as a DOM (Document Object Model). JavaScript can use it to find page elements, inspect them, and change them.
-
-The page's list is marked with `id="myList"`:
-
-```html
-<ul id="myList">
-  <li>Item 1</li>
-  <li>Item 2</li>
-  <li>Item 3</li>
-</ul>
-```
-
-Select it in JavaScript with:
-
-```js
-const myList = document.getElementById("myList");
-```
-
-`myList` now refers to the `<ul>` element. For example, JavaScript can change the first item's text or append a new item:
-
-```js
-myList.querySelector("li").textContent = "Updated item";
-
-const newItem = document.createElement("li");
-newItem.textContent = "Item 4";
-myList.appendChild(newItem);
-```
-
-## What I learned
+Task 1 
 
 - `document` is provided by the browser; it is not a JavaScript keyword. It represents the current page and is commonly used to access the DOM.
-- `document.getElementById("myList")` finds the element whose `id` is `myList`.
-- An element exposes **properties** and **methods**. Properties provide information or values; methods perform actions.
+
+What can I do with the document variable? 
+
+Use document to find, read, and change elements on the current web page . for example, select myList with document.getElementsById("myList")
+
+
+
+
+Task 2:
+
+`document.getElementById("myList")` finds the element whose `id` is `myList`.
+
+
+- An element exposes properties. Properties provide information or values; methods perform actions.
+
 - `myList.id` reads the ID, `myList.children` accesses its direct child elements, and `myList.children.length` counts them.
 - `myList.textContent` reads or changes text. `myList.classList` provides ways to inspect or update CSS classes.
 - `myList.getAttribute("id")` is a method call. `"id"` is the argument telling it which HTML attribute to read.
