@@ -32,6 +32,5 @@ myList.textContent  - reads or changes all the text inside the list.
 myList.classList  - lets you check, add, or remove CSS classes.
 
 
-These are called properties, not parameters. Parameters are values passed into a method, like "myList" in document.getElementById("myList").
-
+'These are called properties, not parameters. Parameters are values passed into a method, like "myList" in document.getElementById("myList").'
 
