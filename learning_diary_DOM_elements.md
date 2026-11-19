@@ -47,3 +47,16 @@ The examples assume `myDiv` refers to the `<div>` element. Setting `innerHTML` p
 | `classList` | Adds, removes, or toggles individual CSS classes. | `myDiv.classList.add("div-highlight");` |
 | `id` | Gets or sets the div's unique identifier. | `myDiv.id = "myDiv";` |
 | `children` | Gives the div's direct child elements. | `myDiv.children.length` |
+
+## Task 5: ul and li elements
+
+The examples use `myList` for the `<ul>` and `item` for an `<li>`. `appendChild()` and `remove()` are methods, not properties.
+
+| Property or method | What it does | Example |
+| --- | --- | --- |
+| `children` | Gives the list's direct child elements; it updates when items are added or removed. | `myList.children.length` |
+| `firstElementChild` | Gets the first child element, or `null` if there are no items. | `myList.firstElementChild.textContent` |
+| `lastElementChild` | Gets the last child element, or `null` if there are no items. | `myList.lastElementChild.textContent` |
+| `textContent` | Reads all text in the list; setting it replaces the list's contents. | `myList.textContent` |
+| `appendChild()` | Adds a node to the end of the list. | `myList.appendChild(item);` |
+| `remove()` | Removes the element it is called on from the page. | `item.remove();` |

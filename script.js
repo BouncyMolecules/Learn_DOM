@@ -36,6 +36,22 @@ changeItemBtn.addEventListener("click", () => {
   firstItem.textContent = text;
 });
 
+const listDemoBtn = document.getElementById("listDemoBtn");
+let demoListItem = null;
+
+listDemoBtn.addEventListener("click", () => {
+  if (demoListItem === null) {
+    demoListItem = document.createElement("li");
+    demoListItem.textContent = "Demo list item";
+    myList.appendChild(demoListItem);
+    listDemoBtn.textContent = "Remove demo item";
+    return;
+  }
+
+  demoListItem.remove();
+  demoListItem = null;
+  listDemoBtn.textContent = "Add demo item";
+});
 
 const submitBtn = document.getElementById("submitBtn");
 
