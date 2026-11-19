@@ -86,3 +86,16 @@ The examples use `myForm` for the form and `event` for its submit event. `reset(
 | `reset()` | Restores controls to their initial values. | `myForm.reset();` |
 | `submit` event | Fires when the form is submitted; listen to it to handle the form. | `myForm.addEventListener("submit", handleSubmit);` |
 | `preventDefault()` | Stops the browser's normal submission, which may navigate or reload the page. | `event.preventDefault();` |
+
+## Task 5: input element
+
+The examples use `nameInput` for a text input and `agreeCheckbox` for a checkbox. `checked` applies to checkboxes and radio buttons.
+
+| Property | What it does | Example |
+| --- | --- | --- |
+| `value` | Gets or sets the input's current value. | `nameInput.value = "Sam";` |
+| `type` | Gets or sets the kind of input, such as `"text"` or `"checkbox"`. | `nameInput.type` |
+| `placeholder` | Gets or sets the hint shown when the input is empty. | `nameInput.placeholder = "Enter your name";` |
+| `checked` | Gets or sets whether a checkbox or radio button is selected. | `agreeCheckbox.checked` |
+| `disabled` | Gets or sets whether the user can interact with the input. | `nameInput.disabled = true;` |
+| `required` | Gets or sets whether a form needs a value before it can be submitted. | `nameInput.required = true;` |

@@ -74,6 +74,29 @@ myForm.addEventListener("submit", (event) => {
   formOutput.textContent = `Name: ${name}; Color: ${color}; Size: ${size}; Agreed: ${agreed}.`;
 });
 
+const demoTextInput = document.getElementById("demoTextInput");
+const demoCheckInput = document.getElementById("demoCheckInput");
+const inspectInputBtn = document.getElementById("inspectInputBtn");
+const toggleInputBtn = document.getElementById("toggleInputBtn");
+const inputDemoOutput = document.getElementById("inputDemoOutput");
+
+inspectInputBtn.addEventListener("click", () => {
+  inputDemoOutput.textContent =
+    `Value: ${demoTextInput.value || "(empty)"}; ` +
+    `type: ${demoTextInput.type}; ` +
+    `placeholder: ${demoTextInput.placeholder}; ` +
+    `checked: ${demoCheckInput.checked}; ` +
+    `disabled: ${demoTextInput.disabled}; ` +
+    `required: ${demoTextInput.required}.`;
+});
+
+toggleInputBtn.addEventListener("click", () => {
+  demoTextInput.disabled = !demoTextInput.disabled;
+  toggleInputBtn.textContent = demoTextInput.disabled
+    ? "Enable text input"
+    : "Disable text input";
+});
+
 const demoButton = document.getElementById("demoButton");
 const enableDemoButton = document.getElementById("enableDemoButton");
 
