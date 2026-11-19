@@ -59,6 +59,21 @@ submitBtn.addEventListener("click", () => {
   document.getElementById("pageTitle").textContent = "You clicked the button!";
 });
 
+const myForm = document.getElementById("myForm");
+const formOutput = document.getElementById("formOutput");
+
+myForm.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const name = myForm.elements.name.value.trim() || "(empty)";
+  const color = myForm.elements.color.value;
+  const selectedSize = myForm.querySelector('input[name="size"]:checked');
+  const size = selectedSize ? selectedSize.value : "not selected";
+  const agreed = myForm.elements.agree.checked ? "yes" : "no";
+
+  formOutput.textContent = `Name: ${name}; Color: ${color}; Size: ${size}; Agreed: ${agreed}.`;
+});
+
 const demoButton = document.getElementById("demoButton");
 const enableDemoButton = document.getElementById("enableDemoButton");
 

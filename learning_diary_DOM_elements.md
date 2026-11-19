@@ -73,3 +73,16 @@ The examples use `myTable` for the table and `row` for a `<tr>`. `insertRow()`, 
 | `insertRow()` | Adds a row to the table and returns it. | `const row = myTable.insertRow();` |
 | `insertCell()` | Adds a `<td>` cell to a row and returns it. | `const cell = row.insertCell();` |
 | `deleteRow(index)` | Deletes the row at the table's zero-based row index. | `myTable.deleteRow(row.rowIndex);` |
+
+## Task 5: form element
+
+The examples use `myForm` for the form and `event` for its submit event. `reset()` and `preventDefault()` are methods.
+
+| Property, event, or method | What it does | Example |
+| --- | --- | --- |
+| `elements` | Gives the controls inside the form. | `myForm.elements.name.value` |
+| `action` | Gets or sets the URL used for a normal form submission. | `myForm.action` |
+| `method` | Gets or sets the submission method, usually `"get"` or `"post"`. | `myForm.method` |
+| `reset()` | Restores controls to their initial values. | `myForm.reset();` |
+| `submit` event | Fires when the form is submitted; listen to it to handle the form. | `myForm.addEventListener("submit", handleSubmit);` |
+| `preventDefault()` | Stops the browser's normal submission, which may navigate or reload the page. | `event.preventDefault();` |
