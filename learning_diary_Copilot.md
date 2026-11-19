@@ -201,3 +201,9 @@ The properties available depend on the kind of element. For example, text inputs
 - It helped to compare button properties by purpose: `textContent` changes the label, `disabled` controls whether it can be clicked, and `style` changes its appearance.
 - Seeing `onclick` alongside `addEventListener()` helped me understand two ways to respond to a click, and why the demo uses `addEventListener()`.
 - The two-button demo made the behavior easier to test: one button changes and disables itself, and the other enables it again.
+
+## Task 5
+
+- Learning about one DOM element at a time helped me see how its properties relate to what that element does on the page.
+- The small interactive demos made the properties easier to understand because I could see the page respond to clicks and selections.
+- I had to check that the element IDs in `index.html` matched the selectors in `script.js`, then try the controls to confirm the behavior.
