@@ -33,3 +33,17 @@ The examples assume `button` refers to a button element. `addEventListener()` is
 | `style` | Lets JavaScript set inline CSS styles. | `button.style.color = "white";` |
 | `onclick` | Assigns a function to run when the button is clicked. | `button.onclick = handleClick;` |
 | `addEventListener()` | Adds a click handler; multiple listeners can be added. | `button.addEventListener("click", handleClick);` |
+
+## Task 5: div element
+
+The examples assume `myDiv` refers to the `<div>` element. Setting `innerHTML` parses HTML; use `textContent` for plain text.
+
+| Property | What it does | Example |
+| --- | --- | --- |
+| `innerHTML` | Reads or replaces the HTML inside the div. | `myDiv.innerHTML = "<strong>Hello</strong>";` |
+| `textContent` | Reads or replaces the text inside the div. | `myDiv.textContent = "Hello";` |
+| `style` | Lets JavaScript set inline CSS styles. | `myDiv.style.backgroundColor = "lightyellow";` |
+| `className` | Gets or replaces all CSS class names on the div. | `myDiv.className = "div-highlight";` |
+| `classList` | Adds, removes, or toggles individual CSS classes. | `myDiv.classList.add("div-highlight");` |
+| `id` | Gets or sets the div's unique identifier. | `myDiv.id = "myDiv";` |
+| `children` | Gives the div's direct child elements. | `myDiv.children.length` |

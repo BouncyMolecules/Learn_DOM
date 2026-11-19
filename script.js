@@ -1,4 +1,5 @@
 
+const myDiv = document.getElementById("myDiv");
 const myList = document.getElementById("myList");
 
 console.log(myList.id);              // "myList"
@@ -57,4 +58,12 @@ enableDemoButton.addEventListener("click", () => {
   demoButton.style.backgroundColor = "";
   demoButton.style.color = "";
   demoButton.disabled = false;
+});
+
+const updateDivBtn = document.getElementById("updateDivBtn");
+
+updateDivBtn.addEventListener("click", () => {
+  myDiv.textContent = "The div's text, color, and class have changed.";
+  myDiv.style.backgroundColor = "lightyellow";
+  myDiv.className = "div-highlight";
 });
