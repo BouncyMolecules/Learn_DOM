@@ -183,3 +183,15 @@ const tableRows = myTable.querySelectorAll("tr");
 ```
 
 The properties available depend on the kind of element. For example, text inputs have a useful `value` property, while a list has `children` and a table has `rows`.
+
+## Task 1
+
+- It helped to start with a simple explanation of `document` and then connect it to examples in my own page.
+- The button example made it easier to see how JavaScript finds an element and changes its text.
+- I had to check `index.html` myself to confirm the button's ID and whether the page had an `<h1>` for the script to update.
+
+## Task 2
+
+- It helped to break the list task into small steps: find `myList`, create a new `<li>`, and append it to the list.
+- Using an input and separate buttons made it clear how the same text can add a new item or replace the first item's text.
+- I had to check that the input and button IDs in `index.html` matched the IDs used by `script.js`, and try what happens when the input is empty.
