@@ -61,6 +61,8 @@ submitBtn.addEventListener("click", () => {
 
 const myForm = document.getElementById("myForm");
 const formOutput = document.getElementById("formOutput");
+const colorSelect = document.getElementById("color");
+const selectOutput = document.getElementById("selectOutput");
 
 myForm.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -73,6 +75,15 @@ myForm.addEventListener("submit", (event) => {
 
   formOutput.textContent = `Name: ${name}; Color: ${color}; Size: ${size}; Agreed: ${agreed}.`;
 });
+
+const showSelection = () => {
+  const selectedOption = colorSelect.options[colorSelect.selectedIndex];
+  selectOutput.textContent =
+    `Selected: ${selectedOption.textContent} (value: ${colorSelect.value})`;
+};
+
+colorSelect.addEventListener("change", showSelection);
+showSelection();
 
 const demoTextInput = document.getElementById("demoTextInput");
 const demoCheckInput = document.getElementById("demoCheckInput");

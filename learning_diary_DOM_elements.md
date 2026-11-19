@@ -99,3 +99,14 @@ The examples use `nameInput` for a text input and `agreeCheckbox` for a checkbox
 | `checked` | Gets or sets whether a checkbox or radio button is selected. | `agreeCheckbox.checked` |
 | `disabled` | Gets or sets whether the user can interact with the input. | `nameInput.disabled = true;` |
 | `required` | Gets or sets whether a form needs a value before it can be submitted. | `nameInput.required = true;` |
+
+## Task 5: select element
+
+The examples use `colorSelect` for the dropdown. The `change` event fires when the selection changes.
+
+| Property or event | What it does | Example |
+| --- | --- | --- |
+| `value` | Gets or sets the value of the selected option. | `colorSelect.value` |
+| `options` | Gives the dropdown's collection of `<option>` elements. | `colorSelect.options.length` |
+| `selectedIndex` | Gets or sets the selected option's zero-based position (`-1` means none). | `colorSelect.selectedIndex` |
+| `change` event | Lets JavaScript respond when the user selects a different option. | `colorSelect.addEventListener("change", showSelection);` |
