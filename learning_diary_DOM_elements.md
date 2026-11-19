@@ -60,3 +60,16 @@ The examples use `myList` for the `<ul>` and `item` for an `<li>`. `appendChild(
 | `textContent` | Reads all text in the list; setting it replaces the list's contents. | `myList.textContent` |
 | `appendChild()` | Adds a node to the end of the list. | `myList.appendChild(item);` |
 | `remove()` | Removes the element it is called on from the page. | `item.remove();` |
+
+## Task 5: table element
+
+The examples use `myTable` for the table and `row` for a `<tr>`. `insertRow()`, `insertCell()`, and `deleteRow()` are methods.
+
+| Property or method | What it does | Example |
+| --- | --- | --- |
+| `rows` | Gives all the table's rows, including header and body rows. | `myTable.rows` |
+| `rows.length` | Counts all the table's rows. | `myTable.rows.length` |
+| `cells` | Gives the `<th>` and `<td>` cells in one row. | `row.cells.length` |
+| `insertRow()` | Adds a row to the table and returns it. | `const row = myTable.insertRow();` |
+| `insertCell()` | Adds a `<td>` cell to a row and returns it. | `const cell = row.insertCell();` |
+| `deleteRow(index)` | Deletes the row at the table's zero-based row index. | `myTable.deleteRow(row.rowIndex);` |

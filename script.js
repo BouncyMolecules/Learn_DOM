@@ -83,3 +83,23 @@ updateDivBtn.addEventListener("click", () => {
   myDiv.style.backgroundColor = "lightyellow";
   myDiv.className = "div-highlight";
 });
+
+const myTable = document.getElementById("myTable");
+const addTableRowBtn = document.getElementById("addTableRowBtn");
+const deleteTableRowBtn = document.getElementById("deleteTableRowBtn");
+let demoTableRow = null;
+
+addTableRowBtn.addEventListener("click", () => {
+  demoTableRow = myTable.insertRow();
+  demoTableRow.insertCell().textContent = "New person";
+  demoTableRow.insertCell().textContent = "25";
+  addTableRowBtn.disabled = true;
+  deleteTableRowBtn.disabled = false;
+});
+
+deleteTableRowBtn.addEventListener("click", () => {
+  myTable.deleteRow(demoTableRow.rowIndex);
+  demoTableRow = null;
+  addTableRowBtn.disabled = false;
+  deleteTableRowBtn.disabled = true;
+});
