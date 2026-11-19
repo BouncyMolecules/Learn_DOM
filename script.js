@@ -41,3 +41,20 @@ const submitBtn = document.getElementById("submitBtn");
 submitBtn.addEventListener("click", () => {
   document.getElementById("pageTitle").textContent = "You clicked the button!";
 });
+
+const demoButton = document.getElementById("demoButton");
+const enableDemoButton = document.getElementById("enableDemoButton");
+
+demoButton.addEventListener("click", () => {
+  demoButton.textContent = "Disabled";
+  demoButton.style.backgroundColor = "tomato";
+  demoButton.style.color = "white";
+  demoButton.disabled = true;
+});
+
+enableDemoButton.addEventListener("click", () => {
+  demoButton.textContent = "Click me to disable";
+  demoButton.style.backgroundColor = "";
+  demoButton.style.color = "";
+  demoButton.disabled = false;
+});

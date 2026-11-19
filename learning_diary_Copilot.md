@@ -195,3 +195,9 @@ The properties available depend on the kind of element. For example, text inputs
 - It helped to break the list task into small steps: find `myList`, create a new `<li>`, and append it to the list.
 - Using an input and separate buttons made it clear how the same text can add a new item or replace the first item's text.
 - I had to check that the input and button IDs in `index.html` matched the IDs used by `script.js`, and try what happens when the input is empty.
+
+## Task 3
+
+- It helped to compare button properties by purpose: `textContent` changes the label, `disabled` controls whether it can be clicked, and `style` changes its appearance.
+- Seeing `onclick` alongside `addEventListener()` helped me understand two ways to respond to a click, and why the demo uses `addEventListener()`.
+- The two-button demo made the behavior easier to test: one button changes and disables itself, and the other enables it again.

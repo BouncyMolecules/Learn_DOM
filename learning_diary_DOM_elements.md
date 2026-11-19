@@ -18,3 +18,18 @@ Your index.html includes a <div>, a <ul> with <li> items, a <table> with rows an
 - I can access the list with `document.getElementById("myList")` and find an existing list item with `myList.querySelector("li")`.
 - To add an item, I can create an `<li>` with `document.createElement("li")`, set its `textContent`, and add it to the list with `myList.appendChild()`.
 - I can change an existing item's text by setting its `textContent`; the input and buttons let me try adding an item or changing the first one.
+
+## Task 3: button element
+
+The examples assume `button` refers to a button element. `addEventListener()` is a method, not a property.
+
+| Property or method | What it does | Example |
+| --- | --- | --- |
+| `textContent` | Reads or changes the button's text. | `button.textContent = "Saved";` |
+| `disabled` | `true` prevents the button from being clicked; `false` enables it. | `button.disabled = true;` |
+| `type` | Sets the button's behavior: `"button"`, `"submit"`, or `"reset"`. | `button.type = "button";` |
+| `id` | Gets or sets the button's unique identifier. | `button.id = "saveButton";` |
+| `className` | Gets or sets the button's CSS class names. | `button.className = "primary";` |
+| `style` | Lets JavaScript set inline CSS styles. | `button.style.color = "white";` |
+| `onclick` | Assigns a function to run when the button is clicked. | `button.onclick = handleClick;` |
+| `addEventListener()` | Adds a click handler; multiple listeners can be added. | `button.addEventListener("click", handleClick);` |
